@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Lighting Application</title>
+	<link rel="stylesheet" type="text/css" href="light.css">
+</head>
+<body>
+
+	<div class="container">
+		<h1 id="font">Smart Lighting Application</h1>
+		<div id="lights">
+			<div class="light" id="light1"></div>
+			<div class="light" id="light2"></div>
+			<div class="light" id="light3"></div>
+		</div>
+		<div>
+			<label for="light-select"; id="size">Select a light:</label>
+			<select id="light-select" onchange="changeLight()">
+				<option value="1">Light 1</option>
+				<option value="2">Light 2</option>
+				<option value="3">Light 3</option>
+			</select>
+		</div>
+		<div>
+			<label for="color-picker"; id="color">Choose a color:</label>
+			<input type="color" id="color-picker" onchange="changeColor()">
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="light.js"></script>
+</body>
+</html>
